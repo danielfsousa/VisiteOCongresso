@@ -6,8 +6,10 @@ import sagaPlugin from 'reactotron-redux-saga'
 
 if (Config.useReactotron) {
   // https://github.com/infinitered/reactotron for more options!
+  window.alert('Reactotron!')
+
   Reactotron
-    .configure({ name: 'Ignite App' })
+    .configure({ name: 'Visite o Congresso' })
     .useReactNative()
     .use(reduxPlugin({ onRestore: Immutable }))
     .use(sagaPlugin())
